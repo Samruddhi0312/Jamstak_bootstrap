@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- animation CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+
+
+
+</head>
+<style>
+    .body {
+        font-family: "Public Sans", sans-serif;
+    }
+
+    .nav-item>a {
+        font-family: "Public Sans", sans-serif;
+        font-weight: 15px;
+        text-decoration: none;
+        color: #c6ccd3;
+        margin-left: 40px;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- logo -->
+            <div class="col-md-3 " >
+                <a href="./index.html">
+                    <img id="logo" src="./assets/images/logo.svg" alt="logo" class="img-fluid"
+                        style="margin-left: 100px; margin-top: 10px;">
+                </a>
+            </div>
+
+            <!-- nav links -->
+
+
+            <div class="col-md-6">
+                <nav class="navbar navbar-expand-lg " >
+                    <div class="container-fluid">
+                        <button id="nav" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse  text-center" id="navbarScroll">
+                            <ul id="navbar" class="navbar-nav  my-lg-0 navbar-nav-scroll ">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="">Landing</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="">Pages</a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a class="nav-link" href="">Blocks</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="">Accounts</a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a class="nav-link" href="">Docs</a>
+                                </li>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+
+            <!-- nav buttons -->
+            <div class="col-md-3" id="button">
+                <button class="btn  px-3 "
+                    style="font-weight: bold; color: #93a2b8; background-color: #324154;">Login</button>
+                <button class="btn"
+                    style="font-weight: bold; background-color: #8b3dff; color: white; margin: 10px;">Create
+                    Account</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Navbar end -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <img id="main-img" src="./assets/images/agency-hero-img.jpg" alt=""
+                    style="z-index:-100;  width: 100%; height: 100%; position:absolute; top: 0px; left:0px;">
+            </div>
+
+            <div class="container-fluid" data-aos="zoom-in">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="hero-heading text-light "
+                            style="position:absolute; left: 150px; top: 200px; width: 500px; ">
+                            <h6
+                                style="font-weight:400px; text-transform: uppercase; font-size: 17px; line-height: 21px;">
+                                Jamstack Development Agency</h6>
+                            <h1 style="font-size: 65px; font-weight: bold; line-height: 80px;">We build fast sites &
+                                apps.
+                            </h1>
+                            <h6 style="font-size: 20px; font-weight:bold; line-height: 30px;">Block is an agency that
+                                designs and develops e-commerce, marketing websites, web applications, and mobile apps.
+                            </h6>
+                            <button class="btn px-3"
+                                style="font-weight: bold; background-color: #8b3dff; color: white; margin: 10px;">Start
+                                Project</button>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- award-logo -->
+
+    <div class="container-fluid " style="background-color: #020617; position: absolute; top: 100%;">
+        <div class="row" style="width: 80%; margin: auto;">
+            <div class="col-md-4" 
+                style="border-top: 1px solid gray; border-bottom: 1px solid rgb(119, 111, 111); border-right: 1px solid gray;">
+                <img data-aos="zoom-in-right" style="padding: 30px;" src="./assets/images/award-logo-1.svg" alt="">
+            </div>
+            <div class="col-md-4" 
+                style=" border-top: 1px solid gray; border-bottom: 1px solid gray; border-right: 1px solid gray;">
+                <img data-aos="zoom-in-right" style="padding: 30px; " src="./assets/images/award-logo-2.svg" alt="">
+            </div>
+            <div class="col-md-4"  style="border-top: 1px solid gray; border-bottom: 1px solid gray;">
+                <img data-aos="zoom-in-right" style="padding: 30px;" src="./assets/images/award-logo-3.svg" alt="">
+            </div>
+
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <p
+                        style=" color: #65758c; text-transform: uppercase; font-size: 17px; text-align: center; margin-top: 50px;">
+                        Project we done</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- award-logo end -->
+        <div class="container fluid">
+            <div class="row">
+                <h1 style="color: white; text-align: center;">Featured work</h1>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <p style="color: #65758c; text-align: center; width: 40%; margin: auto;">We're a web design agency
+                    creating next‑level websites by strategically blending user experience and brand storytelling.</p>
+
+            </div>
+        </div>
+        <div class="container-fluid my-5">
+            <div class="row" style="width:80% ; margin: auto;">
+                <div class="col-md-4">
+                    <div>
+                        <div data-aos="zoom-in-right">
+                            <img  src="./assets/images/portfolio-img-1.jpg" alt="" class="img-fluid"
+                                style="border-radius: 15px;">
+                        </div>
+                        <div>
+                            <a style="text-decoration: none;" href="#">
+                                <h1
+                                    style="font-weight: normal; font-size: 20px; font-weight: 600; Line-height: 30px; color:  rgb(226, 232, 240); padding-top: 30px;">
+                                    Chat GPT for Figma</h1>
+                            </a>
+                            <p style="Font-size: 16px; Font-weight: 500; Line-height: 24px; color: rgb(71, 85, 105);">
+                                Development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <div data-aos="zoom-in-right" data-aos-duration="300">
+                            <img  src="./assets/images/portfolio-img-5.jpg" alt="" class="img-fluid"
+                                style="border-radius: 15px;">
+                        </div>
+                        <div>
+                            <a style="text-decoration: none;" href="#">
+                                <h1
+                                    style="font-weight: normal; font-size: 20px; font-weight: 600; Line-height: 30px; color:  rgb(226, 232, 240); padding-top: 30px;">
+                                    Virtual reality</h1>
+                            </a>
+                            <p style="Font-size: 16px; Font-weight: 500; Line-height: 24px; color: rgb(71, 85, 105);">
+                                UI/UX Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <div data-aos="zoom-in-right"ssss>
+                            <img   data-aos-duration="300" src="./assets/images/portfolio-img-4.jpg" alt="" class="img-fluid"
+                                style="border-radius: 15px;">
+                        </div>
+                        <div>
+                            <a style="text-decoration: none;" href="#">
+                                <h1
+                                    style="font-weight: normal; font-size: 20px; font-weight: 600; Line-height: 30px; color:  rgb(226, 232, 240); padding-top: 30px;">
+                                    AI avatar application</h1>
+                            </a>
+                            <p style="Font-size: 16px; Font-weight: 500; Line-height: 24px; color: rgb(71, 85, 105);">
+                                Web Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- case-study-button -->
+        <div class="container-fluid">
+            <div class="row" style="text-align: center; margin-bottom: 150px;">
+                <div class="col-md-12">
+                    <button class="btn" style="background-color:  #8b3dff; color: white; ">
+                        Read Case Study
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="position: absolute; top: 250%; background-color: #1e293b;">
+        <div class="row" style="width: 80%; margin: auto;">
+            <div class="col-md-12 w-50">
+                <p
+                    style="color: white; Font-size: 20px; Font-weight: 600; Line-height: 21px; margin-top: 100px; text-transform: uppercase;">
+                    our solutions</p>
+                <h1 style="color: white; Font-size: 40px; Font-weight: 700; Line-height: 56px;">Creating a
+                    high-performance website</h1>
+                <p style="color:  rgb(100, 116, 139); Font-size: 16px; Font-weight: 400; Line-height: 24px;">Projects
+                    deep and still going deeper in the mobile & web app development space. From A to Z of building
+                    beautiful apps, we do everything in-house.</p>
+            </div>
+        </div>
+        <div class="row" style="width: 80%; margin: auto;">
+            <div class="col-md-6">
+                <div class="card-body" data-aos="zoom-in"
+                    style="border: 1px solid rgba(88, 84, 84, 0.61); display: flex; border-radius: 10px; padding: 20px; margin-top: 20px;">
+                    <div
+                        style="width: 50px; height: 50px; background-color: #944efd36; border: 1px solid rgb(118, 57, 233); align-content: center; border-radius: 10px; margin: 20px; padding: 10px;">
+                        <i class="bi bi-vector-pen"
+                            style="color: rgb(118, 57, 233); margin-left: 5px; font-size: 20px;"></i>
+                    </div>
+                    <div style="margin-left: 20px;" data-aos="zoom-in">
+                        <h1
+                            style="color: rgb(226, 232, 240) ;font-weight: normal; Font-size: 24px; Font-weight: 700; Line-height: 33.6px; margin-top:20px;">
+                            UX/UI Design</h1>
+                        <p class="text-secondary"
+                            style="Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(100, 116, 139);">
+                            Vivamus eu est eget ipsum molestie commodo in id eratam scelerisque vehicula felis, vitae
+                            volutpat diam efficitur id.</p>
+                        <a href="#"
+                            style="color: #8b3dff; text-decoration: none; Font-size: 18px; Font-weight: 400; Line-height: 24px;color: rgb(199, 162, 255);">Learn
+                            More<i class="bi bi-arrow-right-short"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-body" data-aos="zoom-in"
+                    style="border: 1px solid rgba(88, 84, 84, 0.61); display: flex; border-radius: 10px; padding: 20px; margin-top: 20px;">
+                    <div
+                        style="width: 50px; height: 50px; background-color: rgba(9, 247, 80, 0.226); border: 1px solid  rgb(9, 247, 80); align-content: center; border-radius: 10px; margin: 20px; padding: 10px;">
+                        <i class="bi bi-braces-asterisk"
+                            style="color: rgb(9, 247, 80); margin-left: 5px; font-size: 20px;"></i>
+                    </div>
+                    <div style="margin-left: 20px;" data-aos="zoom-in">
+                        <h1
+                            style="color: rgb(226, 232, 240) ;font-weight: normal; Font-size: 24px; Font-weight: 700; Line-height: 33.6px; margin-top:20px;">
+                            Web Development</h1>
+                        <p class="text-secondary"
+                            style="Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(100, 116, 139);">
+                            Fusce ultrices accumsan porttitor orbi at libero vestibulum viverra elit nisi, efficitur
+                            fringilla sem consectetur ac.</p>
+                        <a href="#"
+                            style="color: #8b3dff; text-decoration: none; Font-size: 18px; Font-weight: 400; Line-height: 24px;color: rgb(199, 162, 255);">Learn
+                            More<i class="bi bi-arrow-right-short"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="row" style="width: 80%; margin: auto;">
+            <div class="col-md-6">
+                <div class="card-body" data-aos="zoom-in"
+                    style="border: 1px solid rgba(88, 84, 84, 0.61); display: flex; border-radius: 10px; padding: 20px; margin-top: 20px;">
+                    <div
+                        style="width: 50px; height: 50px; background-color: rgba(233, 215, 57, 0.301); border: 1px solid rgb(233, 215, 57); align-content: center; border-radius: 10px; margin: 20px; padding: 10px;">
+                        <i class="bi bi-palette2"
+                            style="color: rgb(233, 215, 57); margin-left: 5px; font-size: 20px;"></i>
+                    </div>
+                    <div style="margin-left: 20px;" data-aos="zoom-in">
+                        <h1
+                            style="color: rgb(226, 232, 240) ;font-weight: normal; Font-size: 24px; Font-weight: 700; Line-height: 33.6px; margin-top:20px;">
+                            UX/UI Design</h1>
+                        <p class="text-secondary"
+                            style="Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(100, 116, 139);">
+                            Vivamus eu est eget ipsum molestie commodo in id eratam scelerisque vehicula felis, vitae
+                            volutpat diam efficitur id.</p>
+                        <a href="#"
+                            style="color: #8b3dff; text-decoration: none; Font-size: 18px; Font-weight: 400; Line-height: 24px;color: rgb(199, 162, 255);">Learn
+                            More<i class="bi bi-arrow-right-short"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-body" data-aos="zoom-in"
+                    style="border: 1px solid rgba(88, 84, 84, 0.61); display: flex; border-radius: 10px; padding: 20px; margin-top: 20px;">
+                    <div
+                        style="width: 50px; height: 50px; background-color: rgba(51, 245, 245, 0.301); border: 1px solid cyan; align-content: center; border-radius: 10px; margin: 20px; padding: 10px;">
+                        <i class="bi bi-window-dock" style="color: cyan; margin-left: 5px; font-size: 20px;"></i>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <h1
+                            style="color: rgb(226, 232, 240) ;font-weight: normal; Font-size: 24px; Font-weight: 700; Line-height: 33.6px; margin-top:20px;">
+                            UX/UI Design</h1>
+                        <p class="text-secondary"
+                            style="Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(100, 116, 139);">
+                            Vivamus eu est eget ipsum molestie commodo in id eratam scelerisque vehicula felis, vitae
+                            volutpat diam efficitur id.</p>
+                        <a href="#"
+                            style="color: #8b3dff; text-decoration: none; Font-size: 18px; Font-weight: 400; Line-height: 24px;color: rgb(199, 162, 255);">Learn
+                            More<i class="bi bi-arrow-right-short"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="container-fluid">
+            <div class="row" style="margin-top: 100px;">
+                <div class="col-md-12" style="text-align: center;">
+                    <p
+                        style="Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(255, 255, 255);  text-transform: uppercase;">
+                        modern tech stack</p>
+                    <h1 style="Font-size: 32px; Font-weight: 700; Line-height: 44.8px; color: rgb(226, 232, 240);">
+                        Building the web</h1>
+                    <p
+                        style="Font-size: 16px;  Font-weight: 400; Line-height: 24px;  color: rgb(100, 116, 139) ;width: 40%; margin: auto;">
+                        We work with cutting-edge technologies designed to solve your product requirements. Focus on
+                        finding solutions for your business needs while we handle the technical aspect.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid">
+            <div class="row" style="width: 70%; margin: auto; margin-top: 50px;">
+                <div class="col-md-2" style="margin: 10px;" data-aos="zoom-out-down">
+                    <img src="./assets/images/brand-logo-1.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-2" style="margin: 10px;" data-aos="zoom-out-down">
+                    <img src="./assets/images/brand-logo-2.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-2" style="margin: 10px;" data-aos="zoom-out-down">
+                    <img src="./assets/images/brand-logo-3.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-2" style="margin: 10px;" data-aos="zoom-out-down">
+                    <img src="./assets/images/brand-logo-4.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-2" style="margin: 10px;" data-aos="zoom-out-down">
+                    <img src="./assets/images/brand-logo-5.svg" alt="" class="img-fluid">
+
+                </div>
+            </div>
+
+            <div class="row" style="width: 70%; margin: auto;">
+                <div class="col-md-2" style="margin: 10px; " data-aos="zoom-out-down">
+                    <img src="./assets/images/brand-logo-6.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-2" style="margin: 10px;" data-aos="zoom-out-down">
+                    <img src="./assets/images/brand-logo-7.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-2" style="margin: 10px;" data-aos="zoom-out-down">
+                    <img src="./assets/images/brand-logo-8.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-2" style="margin: 10px;" data-aos="zoom-out-down">
+                    <img src="./assets/images/brand-logo-9.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-2" style="margin: 10px;" data-aos="zoom-out-down">
+                    <img src="./assets/images/brand-logo-10.svg" alt="" class="img-fluid">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <!-- who we are -->
+
+    <div class="container-fluid" style="position: absolute; top: 450%; background-color: #020617;">
+        <div class="row" style="width:80%; margin: auto;" >
+            <div class="col-md-6" style="margin-top: 100px;" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                <h6 
+                    style="Font-size: 16px; Font-weight: 400; Line-height: 24px;  color: rgb(100, 116, 139); text-transform: uppercase;">
+                    who we are</h6>
+                <h1  style="Font-size: 40px; Font-weight: 700; Line-height: 56px;  color: rgb(226, 232, 240);">Believes
+                    in the power of creative strategy.</h1>
+                <p  style="Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(100, 116, 139);">We are a web
+                    design and development agency. We specialise in bridging the gap between our clients and their
+                    goals.</p>
+                <p  style="Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(100, 116, 139);">Consequat
+                    mauris nunc congue nisi vitae suscipit tellus mauris a. Amet mattis vulputate enim nulla aliquet
+                    porttitor lacus.</p>
+                <p ><a href="#" style="color:rgb(160, 102, 247);">More about us <i class="bi bi-arrow-right-short"
+                            style="text-align: center;"></i></a></p>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-md-6" style="margin-top: 100px; ">
+                        <img src="./assets/images/about-grid-img-2.jpg" alt="" class="img-fluid"
+                            style="border-radius: 20px; height: 100%;">
+                    </div>
+                    <div data-aos="fade-right" data-aos-offset="300"  data-aos-easing="ease-in-sine" class="col-md-6">
+                        <div data-aos="fade-right"  data-aos-offset="300" data-aos-easing="ease-in-sine" class="row" style="margin-top: 100px;">
+                            <div class="col-md-12">
+                                <img src="./assets/images/about-grid-img-1.jpg" alt="" style="border-radius: 20px;">
+                            </div>
+                        </div>
+                        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="row" style="margin-top: 10px; ">
+                            <div class="col-md-12">
+                                <img src="./assets/images/about-grid-img-3.jpg" alt="" style="border-radius: 20px;">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid" style="margin-top:80px ;">
+            <div class="row" style="width: 80%; margin: auto;">
+                <div class="col-md-4"data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                    style="border-top: 1px solid gray; border-bottom: 1px solid gray; border-right: 1px solid gray;">
+                    <p style="text-align: center; font-size: 40px; padding: 10px;"> <i class="bi bi-people-fill"
+                            style="color: #8b3dff;"></i></p>
+                    <h2
+                        style="text-align: center; Font-size: 20px; Font-weight: 600; Line-height: 28px; color: rgb(226, 232, 240);">
+                        Expert team</h2>
+                    <p
+                        style="text-align: center; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(100, 116, 139);">
+                        Vivamus eget neque lacus. Pellentesque egauris ex.</p>
+
+                </div>
+                <div class="col-md-4" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                    style="border-top: 1px solid gray; border-bottom: 1px solid gray; border-right: 1px solid gray;">
+                    <p style="text-align: center; font-size: 40px; padding: 10px;"> <i class="bi bi-trophy-fill"
+                            style="color: #8b3dff;"></i></p>
+                    <h2
+                        style="text-align: center; Font-size: 20px; Font-weight: 600; Line-height: 28px; color: rgb(226, 232, 240);">
+                        Award winning agency</h2>
+                    <p
+                        style="text-align: center; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(100, 116, 139);">
+                        Lorem ipsum, dolor sit amet consectetur elitorceat .</p>
+
+                </div>
+                <div class="col-md-4" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" style="border-top: 1px solid gray; border-bottom: 1px solid gray;">
+                    <p style="text-align: center; font-size: 40px; padding: 10px;"> <i class="bi bi-stars"
+                            style="color: #8b3dff;"></i></p>
+                    <h2
+                        style="text-align: center; Font-size: 20px; Font-weight: 600; Line-height: 28px; color: rgb(226, 232, 240);">
+                        10 Year Exp.</h2>
+                    <p
+                        style="text-align: center; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(100, 116, 139);">
+                        Pellen tesque eget, mauris lorem iupsum neque lacus.</p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--article  -->
+
+        <div class="container-fluid" style="margin-top: 100px;">
+            <div class="row" style="text-align: center;" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+                <div class="col-md-12">
+                    <h1 style="Font-size: 40px; Font-weight: 700; Line-height: 56px; color: rgb(226, 232, 240)">Our
+                        articles on agency</h1>
+                </div>
+            </div>
+            <div class="row" style="text-align: center;" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+                <div class="col-md-12">
+                    <p style="Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(100, 116, 139);">At
+                        least, not exclusively. Reduced recruiting costs, more efficient and effective communication.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row" style="width: 80%; margin: auto;" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+                <div class="col-md-4" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0">
+                    <img src="./assets/images/blog-img-3.jpg" alt="" class="img-fluid" style="border-radius: 10px;">
+                    <div class="row">
+                        <p
+                            style="margin-top: 20px; margin-left: 10px; border-radius:10px ; background-color: #8b3dff; width:70px; Font-size: 12px;  Font-weight: 700; Line-height: 12px; color: rgb(203, 170, 253); padding-top: 5px; padding-bottom: 5px;">
+                            STARTUP</p>
+                        <h6 style="Font-size: 20px; Font-weight: 600; Line-height: 30px; color:   rgb(226, 232, 240);">
+                            You will destroy yourself financially if you save</h6>
+                    </div>
+                    <div class="row" >
+                        <div class="col-md-6" style="display: flex;" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0">
+                            <img class="img-fluid" src="./assets/images/avatar-8.jpg" alt=""
+                                style="width: 20px; height: 20px; border-radius: 20px;">
+                            <p
+                                style="margin-left: 10px; Font-size: 14px; Font-weight: 400; Line-height: 21px;  color: rgb(100, 116, 139);">
+                                Sandip Chauhan</p>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0">
+                            <p
+                                style="margin-left: 50px; Font-size: 14px; Font-weight: 400; Line-height: 21px; color: rgb(100, 116, 139);">
+                                Nov 26, 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0">
+                    <img src="./assets/images/blog-img-5.jpg" alt="" class="img-fluid" style="border-radius: 10px;">
+                    <div class="row" data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0">
+                        <p
+                            style="margin-top: 20px; margin-left: 10px; border-radius:10px ; background-color: rgb(110, 86, 5); width:70px; Font-size: 12px;  Font-weight: 700; Line-height: 12px; color: rgb(240, 199, 75); padding-top: 5px; padding-bottom: 5px; text-transform: uppercase;">
+                            Business</p>
+                        <h6 style="Font-size: 20px; Font-weight: 600; Line-height: 30px; color:   rgb(226, 232, 240);">
+                            Block Template for startup business</h6>
+                    </div>
+                    <div class="row" data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0">
+                        <div class="col-md-6" style="display: flex;">
+                            <img class="img-fluid" src="./assets/images/avatar-6.jpg" alt=""
+                                style="width: 20px; height: 20px; border-radius: 20px;">
+                            <p
+                                style="margin-left: 10px; Font-size: 14px; Font-weight: 400; Line-height: 21px;  color: rgb(100, 116, 139);">
+                                Anita Parmar</p>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0">
+                            <p
+                                style="margin-left: 50px; Font-size: 14px; Font-weight: 400; Line-height: 21px; color: rgb(100, 116, 139);">
+                                Nov 26, 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"> 
+                    <img src="./assets/images/blog-img-4.jpg" alt="" class="img-fluid" style="border-radius: 10px;">
+                    <div class="row">
+                        <p
+                            style="margin-top: 20px; margin-left: 10px; border-radius:10px ; background-color: rgb(1, 28, 34); width:70px; Font-size: 12px;  Font-weight: 700; Line-height: 12px; color: rgb(102, 179, 107); padding-top: 5px; padding-bottom: 5px; text-transform: uppercase;">
+                            Digital</p>
+                        <h6 style="Font-size: 20px; Font-weight: 600; Line-height: 30px; color:   rgb(226, 232, 240);">
+                            The power of doing nothing at all</h6>
+                    </div>
+                    <div class="row" data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" style="margin-bottom: 100px;">
+                        <div class="col-md-6" style="display: flex;">
+                            <img class="img-fluid" src="./assets/images/avatar-4.jpg" alt=""
+                                style="width: 20px; height: 20px; border-radius: 20px;">
+                            <p
+                                style="margin-left: 10px; Font-size: 14px; Font-weight: 400; Line-height: 21px;  color: rgb(100, 116, 139);">
+                                Jitu Chauhan</p>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0">
+                            <p
+                                style="margin-left: 50px; Font-size: 14px; Font-weight: 400; Line-height: 21px; color: rgb(100, 116, 139);">
+                                Nov 26, 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="containr-fluid" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"
+        style=" position: absolute; top: 670% ; left: 0px; right: 0px;  background-color: rgb(3, 27, 46);">
+        <div class="row" style="width: 80%; margin: auto; ">
+            <div class="col-md-6" style="margin-top: 100px;">
+                <h1 style="font-size: 40px; font-weight: 700; line-height: 56px; color: rgb(226,232,240);">Hire
+                    experienced Jamstack developer</h1>
+                <p style="font-size:16px; font-weight:400; line-height: 24px; color: rgb(100,116,139);">Book a free
+                    consultation call with one of our experts and get help with your next moves. It's always good to
+                    talk to an expert. It's free!</p>
+                <ul style="font-size:16px; font-weight:400; line-height: 24px; color: rgb(100,116,139);">
+                    <li>Not sure which technology to choose?</li>
+                    <li>Need advice on the next steps?</li>
+                    <li>Hesitating on how to plan the execution?</li>
+                </ul>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="./assets/images/avatar-7.jpg" alt="" class="img-fluid"
+                            style="margin-top: 10px; width: 50px; height: 50px; border-radius: 50%; ">
+                    </div>
+                    <div class="col-md-10">
+                        <p style="Font-size: 16px; Font-weight: 600; color: rgb(226, 232, 240); margin-top: 10px;">Jitu
+                            Chauhan</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p style="Font-size: 12.25px; Font-weight: 400;  color: rgb(100, 116, 139);">Head of
+                                    Sales</p>
+                            </div>
+                            <div class="col-md-2 ">
+                                <p style="Font-size: 12.25px; Font-weight: 400; color: rgb(100, 116, 139);">
+                                    sales@blockui.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" style="margin-top: 50px; ">
+                <div class="row"
+                    style="width: 80%; padding: 30px; margin: 50px; border: 1px solid rgb(119, 118, 118); border-radius: 20px; background-color: rgb(30, 41, 59);">
+                    <form action="">
+                        <h2
+                            style="margin: 10px; Font-size: 24px; Font-weight: 700; Line-height: 33.6px; color: rgb(226, 232, 240);">
+                            Schedule a free estimate call</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p
+                                    style="Font-size: 14px; Font-weight: 500; Line-height: 21px; color: rgb(100, 116, 139);margin: 5px; ">
+                                    First Name <span style="width: 10px ; height: 10px; font-size: 7px;"><sup><i
+                                                style="color: red;" class="bi bi-asterisk"></i></sup></span></p>
+                                <input required style="background-color: #020617; border-color: rgb(134, 134, 134);" type="text"
+                                    class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <p
+                                    style="Font-size: 14px; Font-weight: 500; Line-height: 21px; color: rgb(100, 116, 139); margin: 5px;">
+                                    Last Name <span style="width: 10px ; height: 10px; font-size: 7px;"><sup><i
+                                                style="color: red;" class="bi bi-asterisk"></i></sup></span></p>
+                                <input required style="background-color: #020617;  border-color: rgb(134, 134, 134);" type="text"
+                                    class="form-control">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <p
+                                style="Font-size: 14px; Font-weight: 500; Line-height: 21px; color: rgb(100, 116, 139); margin: 5px;">
+                                Email <span style="width: 10px ; height: 10px; font-size: 7px;"><sup><i
+                                            style="color: red;" class="bi bi-asterisk"></i></sup></span></p>
+                            <input required
+                                style="background-color: #020617; margin-left: 10px; width: 95%;  border-color: rgb(134, 134, 134);"
+                                type="email" class="form-control">
+
+                        </div>
+                        <div class="row">
+                            <p
+                                style="Font-size: 14px; Font-weight: 500; Line-height: 21px; color: rgb(100, 116, 139); margin: 5px;">
+                                Message</p>
+                            <textarea
+                                style="background-color: #020617; margin-left: 10px; width: 95%;  border-color: rgb(134, 134, 134);"
+                                name="txt" id="" class="form-control"> </textarea>
+
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="Let's Work Together!"
+                                style="font-weight: 600; color: white; background-color: rgb(139, 61, 255); border: none; border-radius: 10px; width: 95%; height: 40px; margin: 20px; margin-left: 10px;">
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+     
+    </div>
+
+    <div class="container-fluid" style="position: absolute; top: 765%; background-color: rgb(2, 6, 23);">
+        <div class="row" style="width: 80%; margin: auto; margin-top: 80px;">
+            <div class="col-md-6">
+                <img  src="./assets/images/logo.svg" alt="">
+                <p style="width: 85%; Font-size: 16px; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(100, 116, 139); margin-top: 20px;">Build faster websites with Block multipurpose bootstrap 5 template. Duis imper diet mollis leo, quis ultrices erat ultrices simple dummy .</p>
+                <p style="Font-size: 16px; Font-weight: 600; Line-height: 22.4px; color: rgb(226, 232, 240);">Subscribe to our newsletter</p>
+                 <form action=""><input style="color: #324154; background-color:rgb(2, 6, 23) ; border: 1px solid #324154; border-radius: 10px; width: 60%; height: 40px; padding: 20px; margin-bottom: 50px;" type="email" placeholder="Email address" required> <span><input type="submit" value="Subscribe" style="color: white; background-color: #8b3dff; width:20%; height: 40px; border-radius: 10px; border: none; margin: 10px; padding: 10px;"></span></form>
+                <p style="Font-size: 14px; Font-weight: 400; Line-height: 21px; color: rgb(100, 116, 139);">Copyright © 2024 <a href="" style="color: #8b3dff; text-decoration: none;"> Block Bootstrap 5 Theme</a> | Designed by <a href="" style="color: #8b3dff; text-decoration: none;">CodesCandy</a></p>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                <div class="col-md-4">
+                    
+                    <ul style="list-style: none;">
+                        <p style="Font-size: 16px; Font-weight: 600; Line-height: 22.4px; color: rgb(226, 232, 240);">Landings</p>
+                      <li style="margin-top: 20px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);">Saas</a></li>
+                      <li style="margin-top: 10px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 14px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);">Software Company</a></li>
+                      <li style="margin-top: 10px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);">Finance</a></li>
+                      <li style="margin-top: 10px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);">Digital Agency</a></li>
+                      <li style="margin-top: 10px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);">Conference</a></li>
+                      <li style="margin-top: 10px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);">App Template</a></li>
+                    
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    
+                    <ul style="list-style: none;">
+                        <p style="Font-size: 16px; Font-weight: 600; Line-height: 22.4px; color: rgb(226, 232, 240);">Accounts</p>
+                        <li style="margin-top: 20px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);">Register</a></li>
+                        <li style="margin-top: 10px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);">Forgot Password</a></li>
+                        <li style="margin-top: 10px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);">Reset Password</a></li>
+                        <li style="margin-top: 10px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);;">Profile</a></li>
+                        <li style="margin-top: 10px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);">Login</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4">
+                    
+                    <ul style="list-style: none;">
+                        <p style="Font-size: 16px; Font-weight: 600; Line-height: 22.4px; color: rgb(226, 232, 240);">Resources</p>
+                        <li style="margin-top: 20px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);">Docs</a></li>
+                        <li style="margin-top: 10px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);">Support</a></li>
+                        <li style="margin-top: 10px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);">Changelog</a></li>
+                        <li style="margin-top: 10px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);">Help Center</a></li>
+                        <li style="margin-top: 10px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);">Community</a></li>
+                        <li style="margin-top: 10px; margin-bottom: 10px; " ><a href="" style="text-decoration: none; Font-size: 16px; Font-weight: 400; Line-height: 24px; color: rgb(117, 111, 129);">Webinars</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    AOS.init();
+  </script>
+
+</html>
